@@ -149,7 +149,7 @@ public class Vowels {
             System.out.println("Invalid operation");
 
 
-        }15
+        }
 
         sc.close();
         
