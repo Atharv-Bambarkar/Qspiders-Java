@@ -1,9 +1,13 @@
+import java.util.Scanner;
 
 public class Vowels {
     public static void main(String[] args) {
         //grade(59);
         //typeOfData('P');
-        switchCase(5);
+        // switchCase(5);
+        switchCase2("add");
+
+        
 
     }
 
@@ -101,6 +105,54 @@ public class Vowels {
             break;
             
         }
+    }
+
+
+    static void switchCase2(String ch){
+
+        Scanner sc =new Scanner(System.in);
+        
+        switch (ch){
+            case "add": 
+            System.out.println("Value of a ");
+            int a = sc.nextInt();
+            System.out.println("Value of b ");
+            int b = sc.nextInt();
+            System.out.println("value is " + (a+b));
+            break;
+
+            case "subtract":
+            System.out.println("Value of a ");
+            int a1 = sc.nextInt();
+            System.out.println("Value of b ");
+            int b1 = sc.nextInt();
+            System.out.println("value is " + (a1-b1));
+            break;
+
+            case "multiply":
+            System.out.println("Value of a ");
+            int a2 = sc.nextInt();
+            System.out.println("Value of b ");
+            int b2 = sc.nextInt();
+            System.out.println("value is " +  (a2*b2));
+            break;
+
+            case "divide":
+            System.out.println("Value of a ");
+            int a3 = sc.nextInt();
+            System.out.println("Value of b ");
+            int b3 = sc.nextInt();
+            System.out.println(" value is "+(a3/b3));
+            break;
+
+            case "default":
+            System.out.println("Invalid operation");
+
+
+        }15
+
+        sc.close();
+        
     }
 
 
